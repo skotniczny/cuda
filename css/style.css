@@ -1868,6 +1868,27 @@ blockquote footer span {
   }
 }
 
+.hamburger-button {
+  border: 0;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 0;
+  padding: .25em;
+  position: absolute;
+  top: .25em;
+  right: 0;
+}
+.hamburger-button:focus {
+  outline: thin dotted;
+}
+@media (min-width: 768px) {
+  .hamburger-button {
+    display: none;
+  }
+}
+
 .main-menu,
 .footer-menu {
   margin: 0;
@@ -1890,6 +1911,11 @@ blockquote footer span {
 
 .main-menu {
   margin: 1em 0;
+}
+@media (min-width: 768px) {
+  .main-menu {
+    display: block !important;
+  }
 }
 @media (min-width: 992px) {
   .main-menu {
@@ -1926,7 +1952,8 @@ blockquote footer span {
 }
 
 .main-header {
-  padding-top: 3.625em;
+  position: relative;
+  margin-top: 3.625em;
 }
 @media (min-width: 768px) {
   .main-header {
@@ -2128,7 +2155,7 @@ textarea {
 
 /* Helper classes */
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 .img-circle {

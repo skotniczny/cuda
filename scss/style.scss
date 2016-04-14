@@ -148,6 +148,25 @@ blockquote {
   }
 }
 
+.hamburger-button {
+  border: 0;
+  background-color: transparent;
+  color: $white;
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 0;
+  padding: .25em;
+  position: absolute;
+  top: .25em;
+  right: 0;
+  &:focus {
+    outline: thin dotted;
+  }
+  @media (min-width: $small) {
+    display: none;
+  }
+}
+
 .main-menu,
 .footer-menu {
   margin: 0;
@@ -165,6 +184,9 @@ blockquote {
 
 .main-menu {
   margin: 1em 0;
+  @media (min-width: $small) {
+    display: block !important;
+  }
   @media (min-width: $medium) {
     margin: 0;
   }
@@ -200,7 +222,8 @@ blockquote {
 }
 
 .main-header {
-  padding-top: em(58);
+  position: relative;
+  margin-top: em(58);
   @media (min-width: $small) {
     padding-left: em(50);
     padding-right: em(50);
@@ -412,7 +435,7 @@ textarea {
 /* Helper classes */
 
 .hidden {
-    display: none !important;
+    display: none;
 }
 
 .img-circle {

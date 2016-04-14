@@ -8,6 +8,6 @@ Based on [Cuda](https://w3layouts.com/cuda-portfolio-flat-responsive-web-templat
 * Built with jQuery
 * Responsive
 * Animated SVG Donut Charts
-* A little bit of accessibility and progressive enhancement improvments
+* A little bit of accessibility and progressive enhancement improvements
 
 Visit [skotisz.linuxpl.info/cuda](http://skotisz.linuxpl.info/cuda)

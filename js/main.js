@@ -1,3 +1,11 @@
+// Hamburger Button 
+$mainMenu = $(".main-menu");
+$mainMenu.addClass('hidden');
+
+$("#hamburger").on('click', function() {
+  $mainMenu.toggleClass("hidden");
+});
+
 // More Button
 $("#more-projects").on("click", function(event) {
   event.preventDefault();
